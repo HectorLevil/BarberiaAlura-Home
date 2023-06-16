@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto-Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <a href="http://127.0.0.1:3000/home.html"><img src="imagenes/logo.png"></a>
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:3000/home.html">HOME</a></li>        
+                        <li><a href="http://127.0.0.1:3000/productos.html">PRODUCTOS</a></li>
+                        <li><a href="http://127.0.0.1:3000/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+    
+                <form>
+                    <fieldset>
+                        <label for="nombreapellido">Nombre y apellido</label>
+                        <input class="input-padron" type="text" id="nombreapellido" required >
+
+                        <label for="correo">Correo Electrónico </label>
+                        <input class="input-padron"  type="email" id="correo" required placeholder="name@dominio.cl">
+
+                        <label for="telefono">Teléfono</label>
+                        <input class="input-padron" type="tel" id="telefono" required placeholder="9 XXXX XXXX">
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="textarea" cols="50" rows="08" id="mensaje"></textarea>
+                    </fieldset>
+                    
+
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                        <label><input type="radio" value="email"  name="contacto">Email</label>
+                        
+                        <label><input type="radio" value="telefono"  name="contacto">Teléfono</label>
+                        
+                        <label><input type="radio" value="whatsapp" name="contacto" checked>WhatsApp</label>                                        
+                    </fieldset>  
+
+                    <fieldset class="selector-fecha">
+                        <legend>¿En que horario le gustaria ser atendido?</legend>
+                        <select>
+                            <option value="mañana">Mañana</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noche">Noche</option>
+                        </select>
+                    </fieldset>
+
+                    <label><input class="checkbox" type="checkbox" id="novedades" checked>¿Quiere recibir novedaes acerca de alura?</label>
+                    <input  class="enviar-button" type="submit" value="Enviar formulario">
+                </form>
+                
+
+                <table>
+                    <thead>
+                        <p class="p-table">Horarios de atención:</p>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horarío</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>08:00 ~ 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Míercoles</td>
+                            <td>08:00 ~ 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>08:00 ~ 20:00</td>
+                        </tr>
+                    </tbody>
+                </table>  
+                
+        </main>
+
+        <footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyrigth"> &copy copyrigth Alura - 2023</p>
+        </footer>    
+
+    </body>
+
+
+
+</html>
